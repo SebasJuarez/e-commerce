@@ -1,0 +1,74 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #902f2f;
+    color: #fff;
+    font-family: 'SF-Pro', sans-serif;
+    padding: 10px;
+    border-radius: 6px;
+    
+  }
+  
+  .navbar-brand {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .navbar-items .rightside{
+    display: flex;
+    gap: 10px;
+  }
+  .logout-btn{
+    background-color: #f38375;
+  }
+  
+  .navbar-items a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-items-small .rightside{
+    display: none; /* Oculta los enlaces de navegación en pantallas pequeñas */
+  }
+  
+  .navbar-toggle {
+    display: none; /* Oculta el botón de menú desplegable por defecto */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      justify-content: center; /* Centra los elementos verticalmente */
+      padding: 10px 20px; /* Ajusta el espacio de padding en pantallas pequeñas */
+    }
+  
+    .navbar-items .rightside{
+      display: none; /* Oculta los enlaces de navegación en pantallas pequeñas */
+    }
+  
+    .navbar-items-small .rightside{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Centra los elementos verticalmente */
+      gap: 10px;
+      font-size: 150%;
+    }
+    .logout-btn{
+      background-color: #f38375;
+    }
+    .navbar-toggle {
+      display: block; /* Muestra el botón de menú desplegable en pantallas pequeñas */
+      color: #f38375;
+      background-color: #902f2f;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 5px;
+    }
+  }
+  
+  

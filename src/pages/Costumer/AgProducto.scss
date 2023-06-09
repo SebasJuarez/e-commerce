@@ -1,0 +1,53 @@
+body{
+    background-color: #f38375;
+}
+.titulo{
+    font-family: 'SF-Pro', sans-serif;
+    text-align: center;
+    background-color: #902f2f;
+    color: #fff;
+    padding: 1%;
+    margin: 0;
+    border-radius: 6px;
+}
+.form-group1 {
+    font-family: 'SF-Pro', sans-serif;
+    width: 70%;
+    margin-bottom: 20%;
+    border: 1px solid #9b7ede;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label1{
+    margin-bottom: 5%;
+    font-size: 150%;
+}
+.form-control{
+    margin-bottom: 5%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.formdiv{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.mybtn{
+    background-color: #f38375;
+}
+.mybtn:hover{
+    background-color: #902f2f;
+}
+@media (max-width: 480px) {
+    .formdiv{
+      width: 100%;
+      max-width: 400px;
+    }
+  }
